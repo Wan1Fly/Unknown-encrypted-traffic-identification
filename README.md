@@ -15,10 +15,10 @@
 ### 文件结构
 ​**主文件名**​：`Sni_pattern_match`  
 #### 📁 src（RTL代码-Verilog）  
-- `data_mover_engine`：BRAM数据读取与传输控制  
-- `pre_fixed_parse`：固定字段协议解析（基于TLS/DTLS/SSH协议）
-- `bytes_table_screen`：双字节快速扫描（基于待匹配模式串） 
-- `sni_pattern_match`：浮动窗口模式匹配（基于改进版shift-or）  
+- `data_mover_engine.v`：BRAM数据读取与传输控制  
+- `pre_fixed_parse.v`：固定字段协议解析（基于TLS/DTLS/SSH协议）
+- `bytes_table_screen.v`：双字节快速扫描（基于待匹配模式串） 
+- `sni_pattern_match.v`：浮动窗口模式匹配（基于改进版shift-or）  
 #### 📁 coe  
 - 算法掩码表（shift-or专用）  
 - 预存模式串前两字节的匹配索引  
@@ -49,10 +49,10 @@
 ### 文件结构
 ​**主文件名**​：`Entropy_Calc`  
 #### 📁 src（RTL代码-Verilog）  
-- `data_move_engine`：BRAM数据读取与传输控制  
-- `byte_count`：字节值频率并行统计模块  
-- `entropy_calc`：查表法熵值计算（含误差补偿）  
-- `flow_arbitrate`：流加密属性判定（连续5包加密检测）  
+- `data_move_engine.v`：BRAM数据读取与传输控制  
+- `byte_count.v`：字节值频率并行统计模块  
+- `entropy_calc.v`：查表法熵值计算（含误差补偿）  
+- `flow_arbitrate.v`：流加密属性判定（连续5包加密检测）  
 #### 📁 coe  
 - `-p*log(p)`定点数查找表（LUT）  
 - 长度标准化引入的误差补偿参数
