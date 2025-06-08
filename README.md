@@ -16,8 +16,9 @@
 ​**主文件名**​：`Sni_pattern_match`  
 #### 📁 src（RTL代码-Verilog）  
 - `data_mover_engine`：BRAM数据读取与传输控制  
-- `pre_fixed_parse`：协议包头解析（支持TLS/DTLS/SSH协议）  
-- `sni_pattern_match`：浮动窗口模式匹配引擎（基于改进版shift-or）  
+- `pre_fixed_parse`：固定字段协议解析（基于TLS/DTLS/SSH协议）
+- `bytes_table_screen`：双字节快速扫描（基于待匹配模式串） 
+- `sni_pattern_match`：浮动窗口模式匹配（基于改进版shift-or）  
 #### 📁 coe  
 - 算法掩码表（shift-or专用）  
 - 预存模式串前两字节的匹配索引  
